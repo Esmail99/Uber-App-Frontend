@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9cf774ccb891a0a213e0ec54d94aaa5c",
+    "revision": "cee0721024ee759ca83452d1b426ace5",
     "url": "/Uber-App-Frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Uber-App-Frontend/static/css/2.3b6f1bda.chunk.css"
   },
   {
-    "revision": "34b25a15c38db6cfe859",
+    "revision": "4e4a0c412e757f391712",
     "url": "/Uber-App-Frontend/static/css/main.f7f5dc0f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Uber-App-Frontend/static/js/2.de02e5f0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "34b25a15c38db6cfe859",
-    "url": "/Uber-App-Frontend/static/js/main.4c8eb832.chunk.js"
+    "revision": "4e4a0c412e757f391712",
+    "url": "/Uber-App-Frontend/static/js/main.be950fe2.chunk.js"
   },
   {
     "revision": "684215acac3d3c3b189b",
