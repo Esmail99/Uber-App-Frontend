@@ -47,7 +47,7 @@ class App extends Component{
     return (
       <div>
         <Title />
-        <div className='mw7-ns center pa2 br4 app-container'>
+        <div className='mw7-ns center pt1 pb1 br4 app-container'>
           <Form 
             onFirstInputChange={this.onFirstInputChange} 
             onSecondInputChange={this.onSecondInputChange} 

@@ -10,11 +10,11 @@ li{
 }
 .name{
     position: absolute;
-    left: 40px;
+    left: 20px;
 }
 .dist{
     position: absolute;
-    right: 40px;
+    right: 20px;
 }
 .mainLi{
     background: #435959;
