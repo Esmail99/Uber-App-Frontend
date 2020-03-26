@@ -26,7 +26,7 @@ class App extends Component{
   onFormSubmit = (event) => {
     event.preventDefault();
     this.setState({didFirstSearch: true});
-    fetch(`http://localhost:4000/drivers?x=${this.state.firstInput}&y=${this.state.secondInput}`)
+    fetch(`https://thawing-river-53139.herokuapp.com/drivers?x=${this.state.firstInput}&y=${this.state.secondInput}`)
     .then(response => response.json())
     .then(drivers => this.setState({drivers: drivers}))
     .catch(err => console.log(err))
