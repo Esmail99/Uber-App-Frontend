@@ -1,0 +1,21 @@
+li{
+    position: relative;
+    padding: 15px 0;
+    background: #C0C0C8;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 40px 10px 0px;
+    border-radius: 10px;
+}
+.name{
+    position: absolute;
+    left: 40px;
+}
+.dist{
+    position: absolute;
+    right: 40px;
+}
+.mainLi{
+    background: #435959;
+}

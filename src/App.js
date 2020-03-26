@@ -1,26 +1,71 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Title from './components/Title';
+import Form from './components/Form';
+import Drivers from './components/Drivers';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor() {
+    super();
+    this.state = {
+      firstInput: '',
+      secondInput: '',
+      drivers: [],
+      didFirstSearch: false
+    }
+  }
+
+  onFirstInputChange = (event) => {
+    this.setState({firstInput: event.target.value})
+  }
+
+  onSecondInputChange = (event) => {
+    this.setState({secondInput: event.target.value})
+  }
+
+  onFormSubmit = (event) => {
+    event.preventDefault();
+    this.setState({didFirstSearch: true});
+    fetch(`http://localhost:4000/drivers?x=${this.state.firstInput}&y=${this.state.secondInput}`)
+    .then(response => response.json())
+    .then(drivers => this.setState({drivers: drivers}))
+    .catch(err => console.log(err))
+  }
+
+  render() {
+    let driversList = this.state.drivers;
+    driversList = driversList.map((driver,index) => {
+      return(
+        <li key={index}>
+          <span className='name'>{driver.name}</span>
+          <span className='rate'>{driver.rate}</span>
+          <span className='dist'>{Math.floor(driver.dist.calculated/1000)} m</span>
+        </li>
+      )
+    })
+
+    return (
+      <div>
+        <Title />
+        <div className='mw7-ns center pa2 br4 app-container'>
+          <Form 
+            onFirstInputChange={this.onFirstInputChange} 
+            onSecondInputChange={this.onSecondInputChange} 
+            onFormSubmit={this.onFormSubmit}
+          />
+          {
+            this.state.didFirstSearch
+            ? (
+                driversList.length
+                ? <Drivers driversList={driversList} />
+                : <h2 className='tc'>Sorry, there is no availabe drivers at this location!</h2>
+              )
+            : <p></p>
+          }
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
