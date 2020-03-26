@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Uber-App-Frontend/static/css/main.80f85125.chunk.css",
-    "main.js": "/Uber-App-Frontend/static/js/main.f572719b.chunk.js",
-    "main.js.map": "/Uber-App-Frontend/static/js/main.f572719b.chunk.js.map",
+    "main.js": "/Uber-App-Frontend/static/js/main.0fe59634.chunk.js",
+    "main.js.map": "/Uber-App-Frontend/static/js/main.0fe59634.chunk.js.map",
     "runtime-main.js": "/Uber-App-Frontend/static/js/runtime-main.46806e6b.js",
     "runtime-main.js.map": "/Uber-App-Frontend/static/js/runtime-main.46806e6b.js.map",
     "static/css/2.3b6f1bda.chunk.css": "/Uber-App-Frontend/static/css/2.3b6f1bda.chunk.css",
     "static/js/2.de02e5f0.chunk.js": "/Uber-App-Frontend/static/js/2.de02e5f0.chunk.js",
     "static/js/2.de02e5f0.chunk.js.map": "/Uber-App-Frontend/static/js/2.de02e5f0.chunk.js.map",
     "index.html": "/Uber-App-Frontend/index.html",
-    "precache-manifest.8c91102bd3acb55f53fc044088255ff3.js": "/Uber-App-Frontend/precache-manifest.8c91102bd3acb55f53fc044088255ff3.js",
+    "precache-manifest.0c1750b649c0aa270a2752bc1a082934.js": "/Uber-App-Frontend/precache-manifest.0c1750b649c0aa270a2752bc1a082934.js",
     "service-worker.js": "/Uber-App-Frontend/service-worker.js",
     "static/css/2.3b6f1bda.chunk.css.map": "/Uber-App-Frontend/static/css/2.3b6f1bda.chunk.css.map",
     "static/css/main.80f85125.chunk.css.map": "/Uber-App-Frontend/static/css/main.80f85125.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3b6f1bda.chunk.css",
     "static/js/2.de02e5f0.chunk.js",
     "static/css/main.80f85125.chunk.css",
-    "static/js/main.f572719b.chunk.js"
+    "static/js/main.0fe59634.chunk.js"
   ]
 }
